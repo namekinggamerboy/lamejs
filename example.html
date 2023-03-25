@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 <body>Encoding mp3 from <code>testdata/Left44100.wav</code>
 </body>
-<script src="lame.all.js"></script>
+<script src="https://namekinggamerboy.github.io/lamejs/lame.all.js"></script>
 <script>
     function encodeMono(channels, sampleRate, samples) {
         var buffer = [];
@@ -31,7 +32,7 @@
         window.myAudioPlayer.play();
     }
 
-    var wavFile = "testdata/Left44100.wav";
+    var wavFile = "https://namekinggamerboy.github.io/lamejs/testdata/Left44100.wav";
 
     var request = new XMLHttpRequest();
     request.open("GET", wavFile, true);
